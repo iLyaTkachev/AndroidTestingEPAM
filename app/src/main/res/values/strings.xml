@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AndroidTestEPAM</string>
+    <string name="product_prise">Product: $%.1f</string>
+    <string name="total_prise">Total prise: $%.1f</string>
+    <string name="increment_label">+</string>
+    <string name="decrement_label">-</string>
+    <string name="default_product_count">0</string>
 </resources>
