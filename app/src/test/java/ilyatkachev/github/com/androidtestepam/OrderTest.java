@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 public class OrderTest {
 
     private Order mOrder;
+    private Calculator mCalculator;
 
     @Before
     public void setUp() {

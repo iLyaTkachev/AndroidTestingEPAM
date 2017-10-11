@@ -27,6 +27,12 @@ public class Order {
         }
     }
 
+    public void setProductCount(int count) {
+        if (count >= 0) {
+            this.mProductCount = count;
+        }
+    }
+
     public void setTotalPrice(float price) {
         if (price >= 0) {
             this.mTotalPrice = price;
