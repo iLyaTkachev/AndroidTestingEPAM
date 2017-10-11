@@ -40,6 +40,7 @@ public class CalculatorActivityTest {
 
     @Test
     public void testButtonBehavior() {
+        activityController.create().start().resume();
         View incrementButton = (Button) calculatorActivity.findViewById(R.id.product_increment_button);
         assertNotNull(incrementButton);
         assertEquals(View.VISIBLE, incrementButton.getVisibility());
@@ -48,6 +49,7 @@ public class CalculatorActivityTest {
 
     @Test
     public void testPlusOperation() {
+        activityController.create().start().resume();
         View incrementButton = (Button) calculatorActivity.findViewById(R.id.product_increment_button);
         TextView productCountTextView = (TextView) calculatorActivity.findViewById(R.id.product_count);
         int count = Integer.valueOf(productCountTextView.getText().toString());
