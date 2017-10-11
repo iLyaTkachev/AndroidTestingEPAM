@@ -5,10 +5,20 @@ public class Order {
     private int mProductCount;
     private float mTotalPrice;
 
-    public Order(float productPrice, int productCount, float totalPrice) {
-        this.mProductPrice = productPrice;
-        mProductCount = productCount;
-        mTotalPrice = totalPrice;
+    private static final float DEFAULT_PRODUCT_PRICE = 5.0f;
+    private static final int DEFAULT_PRODUCT_COUNT = 0;
+    private static final float DEFAULT_TOTAL_PRICE = 0.0f;
+
+    public Order() {
+        this.mProductPrice = DEFAULT_PRODUCT_PRICE;
+        this.mProductCount = DEFAULT_PRODUCT_COUNT;
+        this.mTotalPrice = DEFAULT_TOTAL_PRICE;
+    }
+
+    public Order(float mProductPrice, int mProductCount, float mTotalPrice) {
+        this.mProductPrice = mProductPrice;
+        this.mProductCount = mProductCount;
+        this.mTotalPrice = mTotalPrice;
     }
 
     public void incrementProductCount() {
